@@ -24,10 +24,6 @@ struct Or end
 
 
 function construct_junction(typ, values)
-    # comps = foldl((current, rest) -> :($current ∘ (() -> $rest)), esc.(values), init = :i)
-    # comps = foldr((current, rest) -> :($current ∘ (() -> $rest)), esc.(reverse(values)), init = :i)
-    # :(Junction{$typ}((init, op, cont) -> $comps))
-
     expr = :(nothing)
     for v in Iterators.reverse(values)
         expr = quote
