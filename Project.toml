@@ -1,0 +1,6 @@
+authors = ["Philipp Gabler <phipsgabler@users.noreply.github.com>"]
+name = "Junctions"
+uuid = "72fee2ba-09b6-11e9-149b-df18955921dd"
+version = "0.1.0"
+
+[deps]
